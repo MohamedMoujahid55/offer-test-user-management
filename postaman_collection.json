@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "59f6e1d7-26b1-4e08-8a44-0523f25a6565",
+		"name": "Generated from HAR",
+		"description": "HAR To Postman Generated Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29973753"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL1}}/api/users",
+					"host": [
+						"{{baseURL1}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "created / 201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/users",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Sep 2023 21:35:47 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"userName\": \"user\",\n \"birthDay\": \"2000-10-25T00:00:00.000+00:00\",\n \"countryOfResidence\": \"France\",\n \"phoneNumber\": null,\n \"gender\": \"MALE\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Show User Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL1}}/api/users?user_name=user",
+					"host": [
+						"{{baseURL1}}"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "user_name",
+							"value": "user"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "successfully / 200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL1}}/api/users?user_name=user",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "user_name",
+									"value": "user"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Sep 2023 21:35:58 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"userName\": \"user\",\n \"birthDay\": \"2000-10-25T00:00:00.000+00:00\",\n \"countryOfResidence\": \"France\",\n \"phoneNumber\": null,\n \"gender\": \"MALE\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL1",
+			"value": "http://localhost:9090",
+			"type": "any"
+		}
+	]
+}
