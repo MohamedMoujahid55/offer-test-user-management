@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>fr.air.france</groupId>
 	<artifactId>technical-test-air-france</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>technical-test-air-france</name>
 	<description>technical-test-air-france</description>
 	<properties>
