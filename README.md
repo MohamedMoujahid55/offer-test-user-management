@@ -115,4 +115,4 @@ docker run -p 9090:9090 user-management:0.0.1
 ```
 
 ## Other documentations support
-Please find technical documentation (JavaDoc) and request samples (Postman collection) in [**_docs_**](/docs) folder.
+Please find technical documentation (JavaDoc) and request samples (Postman collection) in the project.
